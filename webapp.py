@@ -8,7 +8,7 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    
+    color = request.args['color']
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
