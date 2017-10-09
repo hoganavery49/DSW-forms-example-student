@@ -9,7 +9,7 @@ def render_main():
 @app.route("/response")
 def render_response():
     color = request.args['color']
-    if color == 'teal':
+    if color.lower() == 'teal':
         reply = "That's my favorite color too!"
     else:
         reply = "That color sucks bruh"
